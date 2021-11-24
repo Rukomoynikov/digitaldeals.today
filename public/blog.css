@@ -97,20 +97,6 @@ body {
   /*line-height: 1.625;*/
 }
 
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 65em;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: 100%;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
 /* Typography */
 :is(h1, h2, h3, h4, h5, h6) {
   margin-bottom: 1.38rem;
@@ -153,45 +139,6 @@ p {
 small,
 .text_small {
   font-size: 0.833rem;
-}
-
-a {
-  color: var(--theme-accent);
-  font-weight: 400;
-  text-underline-offset: 0.08em;
-  text-decoration: none;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-a > code:not([class*='language']) {
-  position: relative;
-  color: var(--theme-accent);
-  background: transparent;
-  text-underline-offset: var(--padding-block);
-}
-
-a > code:not([class*='language'])::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background: var(--theme-accent);
-  opacity: var(--theme-accent-opacity);
-  border-radius: var(--border-radius);
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: 2px solid currentColor;
-  outline-offset: 0.25em;
 }
 
 strong {
@@ -247,11 +194,6 @@ pre {
     --padding-inline: 1.25rem;
     border-radius: 8px;
   }
-}
-
-.flex {
-  display: flex;
-  align-items: center;
 }
 
 img.cover {
