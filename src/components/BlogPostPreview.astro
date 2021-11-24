@@ -5,50 +5,52 @@ export interface Props {
 
 const { post } = Astro.props;
 ---
-<article class="post-preview">
-  <header>
-    <p class="publish-date">{post.publishDate}</p>
-    <a href={post.url}><h1 class="title">{post.title}</h1></a>
-  </header>
-  <p>{post.description}</p>
-  <a href={post.url}>Read more</a>
+<article class="discount-block">
+  <div class="discount-block__image">
+    <div class="discount-block__discount-amount">30% discount</div>
+  </div>
+  <div class="discount-block__title">Affinity Serif</div>
+  <div class="discount-block__description">From the smoothest, fastest photo editing and graphic design software to the most powerful publishing software, Affinity ...</div>
 </article>
 
 <style>
-.content :global(main > * + *) {
-  margin-top: 1rem;
+.discount-block {
+  max-width: 328px;
+  padding: 10px;
 }
 
-.post-preview {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 4px solid var(--theme-divider);
+.discount-block__image {
+  width: 100%;
+  height: 184px;
+  background: red;
+  border-radius: 12px;
+  position: relative;
 }
 
-header {
-  align-items: flex-start;
+.discount-block__title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.discount-block__description {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.discount-block__discount-amount {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: white;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  padding-bottom: 2rem;
-  text-align: left;
-}
+  align-items: center;
+  padding: 2px 6px;
 
-.title,
-.author,
-.publish-date {
-  margin: 0;
-}
-
-.publish-date,
-.author {
-  font-size: 1.25rem;
-  color: var(--theme-text-lighter);
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--theme-text);
+  border: 1px dashed #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 </style>

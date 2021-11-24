@@ -1,0 +1,29 @@
+---
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+interface MarkdownFrontmatter {
+  publishDate: number;
+}
+
+let allPosts = await Astro.fetchContent('../pages/posts/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+
+---
+<div class="title">Here is 20 available discounts</div>
+
+<section class="discounts">
+  {allPosts.map(p => <BlogPostPreview post={p} />)}
+</section>
+
+<style scoped>
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.discounts {
+  display: flex;
+  margin: 0 -10px;
+}
+</style>
