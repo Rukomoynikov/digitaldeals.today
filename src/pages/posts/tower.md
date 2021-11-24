@@ -1,7 +1,7 @@
 ---
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
-title: Affinity Serif
+title: Git Tower
 publishDate: 12 Sep 2021
 description: From the smoothest, fastest photo editing and graphic design software to the most powerful publishing software, Affinity ...
 picture: "/assets/discounts/affinity/Banner@2x.jpg"

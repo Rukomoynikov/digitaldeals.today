@@ -5,7 +5,7 @@ export interface Props {
 
 const { post } = Astro.props;
 ---
-<a href="post.discountLink" class="discount-block">
+<a href={post.discountLink} class="discount-block">
   <div class="discount-block__image-container">
     <img src={post.picture} loading="lazy" class="discount-block__image">
     <div class="discount-block__discount-amount">{post.discount}</div>
