@@ -9,26 +9,38 @@ let allPosts = await Astro.fetchContent('../pages/posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 
 ---
-<div class="title">Here is {allPosts.length} available discounts</div>
+<div class="discounts-container">
+  <div class="title">Here is {allPosts.length} available discounts</div>
 
-<section class="discounts">
-  {allPosts.map(p => <BlogPostPreview post={p} />)}
-</section>
+  <section class="discounts-list">  
+    {allPosts.map(p => <BlogPostPreview post={p} />)}
+  </section>
+</div>
 
 <style scoped>
+.discounts-container {
+  border: 1px solid black;
+  padding: 38px 20px 20px 20px;
+  border-radius: 12px;
+}
+
 .title {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
-.discounts {
+.discounts-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -12px;
 }
 
 @media (max-width: 1024px) {
+  .discounts-container {
+    margin: 0 10px;  
+  }
+
   .discounts {
     padding: 0 10px;
   }

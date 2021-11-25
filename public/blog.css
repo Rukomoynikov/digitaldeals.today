@@ -69,11 +69,6 @@ body {
   --theme-code-bg: var(--color-gray-900);
 }
 
-::selection {
-  color: var(--theme-accent);
-  background-color: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
