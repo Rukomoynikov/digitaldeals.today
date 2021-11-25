@@ -2,9 +2,8 @@
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
 title: Vimeo
-publishDate: 12 Sep 2021
 description: From the smoothest, fastest photo editing and graphic design software to the most powerful publishing software, Affinity ...
-picture: "/assets/discounts/affinity/Banner@2x.jpg"
+picture: "/assets/discounts/vimeo.jpg"
 discount: 30% discount
 discountLink: http://affinity.serif.com/
 ---

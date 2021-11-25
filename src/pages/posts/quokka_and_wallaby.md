@@ -1,10 +1,9 @@
 ---
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
-title: Quokka.js
-publishDate: 12 Sep 2021
-description: From the smoothest, fastest photo editing and graphic design software to the most powerful publishing software, Affinity ...
-picture: "/assets/discounts/affinity/Banner@2x.jpg"
-discount: 30% discount
-discountLink: http://affinity.serif.com/
+title: Wallaby.js and Quokka.js
+description: Tools for javascript developers that works in your IDE. Quokka.js is a playground and Wallaby.js is a test runner.
+picture: "/assets/discounts/quokka.jpg"
+discount: 50% discount
+discountLink: https://wallabyjs.com/purchase/
 ---

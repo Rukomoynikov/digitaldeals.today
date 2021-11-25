@@ -16,12 +16,13 @@ const { post } = Astro.props;
 
 <style>
 .discount-block {
-  max-width: 328px;
-  padding: 10px;
+  max-width: calc(100% / 3);
+  padding: 12px;
   display: block;
   color: black;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 .discount-block__image-container {
@@ -43,12 +44,12 @@ const { post } = Astro.props;
 
 .discount-block__title {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 .discount-block__description {
   font-size: 16px;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .discount-block__discount-amount {

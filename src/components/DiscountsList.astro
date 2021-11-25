@@ -9,7 +9,7 @@ let allPosts = await Astro.fetchContent('../pages/posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 
 ---
-<div class="title">Here is 20 available discounts</div>
+<div class="title">Here is {allPosts.length} available discounts</div>
 
 <section class="discounts">
   {allPosts.map(p => <BlogPostPreview post={p} />)}
@@ -25,7 +25,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 .discounts {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0 -12px;
 }
 
 @media (max-width: 1024px) {

@@ -2,9 +2,8 @@
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
 title: The Pragmatic Bookshelf
-publishDate: 12 Sep 2021
-description: From the smoothest, fastest photo editing and graphic design software to the most powerful publishing software, Affinity ...
-picture: "/assets/discounts/affinity/Banner@2x.jpg"
-discount: 30% discount
-discountLink: http://affinity.serif.com/
+description: We create timely, practical books, audio books and videos on classic and cutting-edge topics to help you learn and practice ...
+picture: "/assets/discounts/pragprog.jpg"
+discount: 40% discount
+discountLink: https://pragprog.com
 ---
