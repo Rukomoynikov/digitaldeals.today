@@ -27,10 +27,11 @@ const { post } = Astro.props;
 
 .discount-block__image-container {
   width: 100%;
-  height: 184px;
+
   background: red;
   border-radius: 12px;
   position: relative;
+  aspect-ratio: 16 / 9;
 }
 
 .discount-block__image {
@@ -66,5 +67,17 @@ const { post } = Astro.props;
 
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .discount-block  {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  .discount-block  {
+    max-width: 100%;
+  }
 }
 </style>
